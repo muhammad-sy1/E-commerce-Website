@@ -1,0 +1,337 @@
+.page-title {
+    font-family: var(--poppins-font);
+    font-size: 337.5%;
+    font-weight: 500;
+    margin-block: 30px;
+}
+
+.nav-pills {
+    background-color: var(--white-2);
+    width: 100%;
+    padding: 30px 10px;
+    border-radius: 8px;
+}
+
+.nav-pills .nav-link {
+    font-family: var(--inter-font);
+    font-weight: 600;
+    color: var(--black-4);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    text-align: start;
+    border-bottom: solid 2px transparent;
+    border-radius: 0;
+}
+
+.nav-pills .nav-link:hover {
+    color: var(--black-1);
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    border-bottom: solid 2px #000;
+    color: #000;
+}
+
+.personal-img {
+    position: relative;
+}
+
+.set-img-link {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    border: solid 2px #ffffff;
+}
+
+.box-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.personal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.person-name {
+    font-family: var(--inter-font);
+    font-size: 125%;
+    font-weight: 600;
+}
+
+.tab-title {
+    font-family: var(--inter-font);
+    font-weight: 600;
+    font-size: 125%;
+}
+
+.hint {
+    font-family: var(--inter-font);
+    font-size: 75%;
+    color: var(--black-4);
+
+}
+
+.tab-content label {
+    font-family: var(--inter-font);
+    font-size: 75%;
+    color: var(--black-4);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tab-content input,
+.tab-content textarea {
+    border: solid 1px #cbcbcb;
+    border-radius: 6px;
+    font-family: var(--inter-font);
+    font-size: 100%;
+    padding: 5px 10px;
+    /* text-transform: capitalize; */
+    transition: all 0.2s linear;
+    outline: solid 1px transparent;
+    color: var(--black-1);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: solid 1px #525252;
+}
+
+
+input:focus-visible::placeholder {
+    color: #525252;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 300px;
+}
+
+input[type="submit"] {
+    background-color: var(--black-1);
+    color: var(--white-1);
+    padding: 15px 40px;
+    margin-top: 10px;
+    font-family: var(--inter-font);
+    font-weight: 400;
+}
+
+input[type="submit"]:hover {
+    background-color: #434343;
+    color: var(--white-0);
+}
+
+#v-pills-home,
+#v-pills-messages {
+    padding-inline-end: 20%;
+}
+
+.address-card {
+    border-radius: 8px;
+    border: solid 1px var(--black-4);
+    padding: 16px 24px;
+    /* height: 140px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address-type-edit-button * {
+    font-family: var(--inter-font);
+    font-weight: 600;
+}
+
+.address-type-edit-button .edit-button button {
+    color: var(--black-4);
+    padding: 0;
+    margin: 0;
+}
+
+.address-card>div:not(:first-child) {
+    font-family: var(--inter-font);
+    font-size: 87.5%;
+    font-weight: 400;
+}
+
+.table-titles {
+    color: var(--black-4);
+    border-bottom: solid 1px var(--white-3);
+    padding-bottom: 8px;
+    font-family: var(--inter-font);
+    font-size: 87.5%;
+}
+
+.table-titles * {
+    width: 25%;
+}
+
+.order-item {
+    border-bottom: solid 1px var(--white-3);
+    padding-block: 24px;
+    font-family: var(--inter-font);
+    font-size: 87.5%;
+    display: flex;
+    align-items: center;
+}
+
+.order-item * {
+    width: 25%;
+}
+
+.order-one {
+    border-bottom: solid 1px var(--white-3);
+    /* padding-bottom: 8px; */
+    font-family: var(--inter-font);
+    font-size: 87.5%;
+    margin-bottom: 20px;
+}
+
+.order-one .list-titles {
+    color: var(--black-4);
+    width: 50%;
+}
+
+.order-one .list-titles>div,
+.order-one .order-value>div {
+    margin-bottom: 15px;
+}
+
+#v-pills-messages .table-titles>* {
+    width: 25%;
+}
+
+#v-pills-messages .table-titles>*:first-child {
+    width: 50%;
+}
+
+#v-pills-messages .order-item>* {
+    width: 25%;
+}
+
+#v-pills-messages .order-item>*:first-child {
+    width: 50%;
+}
+
+.add-product {
+    background-color: var(--black-1);
+    color: var(--white-1);
+    padding: 10px;
+    margin-top: 10px;
+    font-family: var(--inter-font);
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.2s linear;
+    margin: 0;
+}
+
+.add-product:hover {
+    background-color: #434343;
+    color: var(--white-0);
+}
+
+.img-container {
+    width: 60px;
+    height: 72px;
+    background-color: var(--white-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.btn-close-menu {
+    border: 0;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0;
+    transition: all 0.1 linear;
+}
+
+.name-color-product{
+    text-wrap: nowrap;
+}
+
+.name-product{
+    font-family: var(--inter-font);
+    font-weight: 600;
+    font-size: 87.5%;
+}
+
+.color-product{
+    font-family: var(--inter-font);
+    font-size: 75%;
+    color: var(--black-4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+
+    #v-pills-home,
+    .v-pills-messages {
+        padding-inline-end: 0;
+    }
+}

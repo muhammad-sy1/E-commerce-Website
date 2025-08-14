@@ -1,0 +1,670 @@
+header .global-banner {
+    background-color: #F3F5F7;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10px;
+    padding-inline: 3px;
+}
+
+header .side-menu *{
+    font-size: 14px;
+}
+
+header .global-banner.d-none {
+    display: none;
+}
+
+header .global-banner .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--inter-font);
+    text-align: center;
+    flex-wrap: wrap
+}
+
+header .global-banner .content .promo-text {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* font-weight: 600; */
+    color: var(--black-3);
+    margin-inline-end: 10px;
+}
+
+header .global-banner .content .promo-text a {
+    color: var(--black-3);
+    font-size: 87.5%;
+}
+
+
+header .global-banner .content svg:first-child {
+    width: 50px;
+}
+
+header .global-banner .content>a {
+    color: var(--blue-color);
+    text-transform: capitalize;
+    position: relative;
+    font-weight: 500;
+    font-size: 85%;
+}
+
+header .existing-underlined::after {
+    background-color: var(--blue-color);
+}
+
+
+header .global-banner button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    margin-inline-end: 15px;
+    height: 100%;
+}
+
+header .global-banner button .close-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .global-banner .content .promo-text a {
+    pointer-events: none;
+}
+
+header nav {
+    padding-block: 10px;
+}
+
+
+header nav .brand a {
+    color: var(--black-1);
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-size: 150%;
+}
+
+header nav .pages-links li a {
+    position: relative;
+}
+
+header nav li a:active {
+    color: var(--black-1) !important;
+}
+
+header nav .pages-links li a:hover {
+    color: var(--black-1);
+}
+
+header nav .brand+ul li:not(:last-child) {
+    margin-inline-end: 30px;
+}
+
+header nav .brand+ul li a {
+    font-family: var(--spaside-menuce-grotesk-font);
+    font-weight: 500;
+    font-size: 87.5%;
+    color: var(--black-4);
+}
+
+header nav .right-ul li:last-child a span,
+header nav .side-menu .footer .buttons-div a span span {
+    font-weight: 700;
+    color: var(--white-0);
+    display: inline-flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: var(--black-1);
+    font-family: var(--inter-font);
+    font-size: 75%;
+}
+
+header nav .search-modal .modal-body {
+    height: 100px;
+}
+
+header nav .sign-modal .modal-content {
+    border-radius: 0;
+}
+
+header nav .sign-modal .modal-body {
+    padding: 0;
+}
+
+header nav .sign-modal .sign-bg-color {
+    background-color: var(--white-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .sign-modal .sign-box-img {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .sign-modal .col-header {
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-size: 250%;
+    color: var(--black-1);
+    margin-bottom: 20px;
+}
+
+header nav .sign-modal .switched-authentication {
+    font-family: var(--inter-font);
+    color: var(--black-4);
+    margin-bottom: 20px;
+}
+
+header nav .sign-modal .switched-authentication button {
+    font-family: var(--inter-font);
+    color: var(--green-color);
+}
+
+header nav .sign-modal .switched-authentication button:hover {
+    color: var(--black-1);
+}
+
+header nav .sign-modal form input {
+    margin-bottom: 20px;
+    transition: all 0.2s linear;
+}
+
+header nav .sign-modal form input:focus {
+    outline: none;
+}
+
+header nav .sign-modal form>input {
+    border: none;
+    border-bottom: solid var(--white-3) 1px;
+}
+
+header nav .sign-modal form>input {
+    border: none;
+    border-bottom: solid var(--white-3) 1px;
+}
+
+header nav .sign-modal #exampleModalToggle form span input {
+    border: none;
+    border-bottom: solid var(--white-3) 1px;
+}
+
+header nav .sign-modal #exampleModalToggle2 form>span input {
+    border: none;
+    border-bottom: solid var(--white-3) 1px;
+}
+
+header nav .sign-modal form>input:focus {
+    border-bottom: solid var(--black-4) 1px;
+}
+
+
+header nav .sign-modal #exampleModalToggle form span input:focus {
+    border-bottom: solid var(--black-4) 1px;
+}
+
+header nav .sign-modal #exampleModalToggle2 form span input:focus {
+    border-bottom: solid var(--black-4) 1px;
+}
+
+header nav .sign-modal form {
+    width: 80%;
+}
+
+
+header nav .sign-modal form svg {
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+}
+
+header nav .sign-modal form button {
+    background-color: var(--black-1);
+    border-radius: 8px;
+    color: var(--white-0);
+    font-family: var(--inter-font);
+    font-weight: 500;
+    padding-block: 7px;
+}
+
+header nav .sign-modal form button:hover {
+    background-color: #434343;
+    color: var(--white-0);
+}
+
+header nav .pages-links a.active {
+    color: var(--black-1) !important;
+}
+
+.btn-close-menu {
+    border: 0;
+    background: transparent;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    transform-origin: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 80px;
+    transition: all 0.1s linear;
+}
+
+.btn-close-menu svg {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-close-menu:hover {
+    transform: rotate(90deg);
+}
+
+header nav .offcanvas {
+    transition: all 0.6s ease-in-out;
+}
+
+header nav .side-menu {
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    top: 0;
+    left: -350px;
+    right: auto;
+    width: 350px;
+    background-color: var(--white-0);
+    z-index: 10000;
+    transition: left 0.6s ease-in-out;
+}
+
+header nav .side-menu.show {
+    left: 0;
+}
+
+.side-menu .body {
+    overflow: auto;
+    padding-inline-end: 10px;
+}
+
+.side-menu .body,
+.side-menu .footer {
+    opacity: 0;
+    transition: all 0.3s linear;
+    padding: 5px 5px;
+}
+
+.side-menu.show * {
+    opacity: 1;
+}
+
+header nav .effect-layer {
+    position: fixed;
+    inset-block: 0;
+    inset-inline: 0;
+    background-color: #43414194;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    z-index: -1;
+}
+
+header nav .side-menu .body * {
+    color: var(--black-1);
+    font-family: var(--inter-font);
+    font-weight: 500;
+}
+
+header nav .side-menu .body ul li {
+    margin: 0;
+    padding-bottom: 16px;
+    border-bottom: var(--white-3) solid 1px;
+}
+
+header nav .side-menu .body>ul>li:nth-child(2) {
+    border-bottom: none;
+}
+
+header nav .side-menu .body ul li ul li {
+    padding-top: 16px;
+}
+
+header nav .side-menu .body ul #myGroup p {
+    border-bottom: var(--white-3) solid 1px;
+}
+
+header nav .side-menu .body ul #myGroup p {
+    padding-block: 16px;
+    margin: 0;
+}
+
+header nav .side-menu .body ul li p button {
+    padding: 0;
+}
+
+header nav .side-menu .body ul li ul li {
+    padding-inline: 20px;
+}
+
+header nav .side-menu .body ul li p button:active {
+    border: none;
+}
+
+
+header nav .side-menu .body ul li .card {
+    border: none;
+    padding: 0;
+}
+
+header nav .side-menu .footer .buttons-div * {
+    color: var(--black-4);
+    font-family: var(--inter-font);
+    font-weight: 500;
+    /* font-size: 112.5%; */
+}
+
+header nav .side-menu .footer .buttons-div a span span {
+    font-size: 75%;
+
+}
+
+header nav .side-menu .footer .buttons-div a {
+    border-bottom: var(--white-3) solid 1px;
+}
+
+header nav .side-menu .footer .signin-button a {
+    background-color: var(--black-1);
+    color: var(--white-0);
+    border-radius: 6px;
+    font-weight: 500;
+    font-family: var(--inter-font);
+    font-size: 112.5%;
+    display: flex;
+    justify-content: center;
+    padding-block: 10px;
+    border: solid 1px var(--black-1);
+}
+
+header nav .side-menu .footer .signin-button a:hover,
+header nav .side-menu .footer .signin-button a:focus {
+    color: var(--black-1);
+    background-color: var(--white-0);
+    border: solid 1px var(--black-1)
+}
+
+header nav .effect-layer.show {
+    z-index: 9999;
+    opacity: 1;
+}
+
+.overlay-menu * {
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.overlay-menu.open * {
+    opacity: 1;
+}
+
+header nav .right-ul .btn-group .dropdown-menu li div * {
+    font-family: var(--inter-font) !important;
+    font-weight: 400 !important;
+    font-size: 14px;
+    color: var(--black-1) !important;
+}
+
+header nav .right-ul .btn-group .dropdown-menu li div:active {
+    background-color: transparent !important;
+}
+
+header nav .right-ul .search-modal .modal-title {
+    font-family: var(--poppins-font);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header nav .clickable-icon {
+    border: none;
+}
+
+header nav .clickable-icon:hover,
+header nav .clickable-icon:active {
+    background-color: transparent !important;
+}
+
+header nav .right-ul .cart-menu ::-webkit-scrollbar,
+.products-section .row :first-child .col-body .content ::-webkit-scrollbar,
+header nav .side-menu ::-webkit-scrollbar {
+    width: 5px;
+}
+
+header nav .right-ul .cart-menu .offcanvas-title {
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-size: 175%;
+    color: var(--black-1);
+}
+
+header nav .right-ul .cart-menu .Purchased-products {
+    overflow: auto;
+    padding-inline-end: 10px;
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card {
+    padding-block: 25px;
+    border-bottom: var(--white-3) solid 1px;
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card:nth-child(1) {
+    padding-top: 0;
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card .img-container {
+    width: 80px;
+    height: 96px;
+    background-color: var(--white-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card .product-info .name-price-product {
+    font-family: var(--inter-font);
+    font-weight: 600;
+    font-size: 87.5%;
+    color: var(--black-1);
+    margin-bottom: 10px;
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card .product-info .color-cancel-product {
+    margin-bottom: 10px;
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card .product-info .color-product {
+    font-family: var(--inter-font);
+    font-size: 75%;
+    color: var(--black-4);
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card .product-info .control-buttons {
+    border: solid 1px var(--black-4);
+    border-radius: 4px;
+    width: 90px;
+    padding: 3px;
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card .product-info .control-buttons button {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 3px;
+    margin: 3px;
+}
+
+header nav .right-ul .cart-menu .Purchased-products .product-card .product-info .control-buttons span {
+    font-family: var(--inter-font);
+    font-size: 75%;
+    font-weight: 600;
+    color: var(--black-1);
+}
+
+header nav .right-ul .cart-menu .chechout-department {
+    margin-top: 20px;
+}
+
+header nav .right-ul .cart-menu .chechout-department .subtotal {
+    font-family: var(--inter-font);
+    color: var(--black-1);
+    padding-bottom: 10px;
+    border-bottom: var(--white-3) solid 1px;
+}
+
+header nav .right-ul .cart-menu .chechout-department .subtotal span:last-child {
+    font-weight: 600;
+}
+
+header nav .right-ul .cart-menu .chechout-department .total {
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-size: 125%;
+    padding-block: 10px;
+}
+
+header nav .right-ul .cart-menu .chechout-department .chechout-link {
+    background-color: var(--black-1);
+    color: var(--white-0);
+    border-radius: 6px;
+    padding-block: 10px;
+    font-family: var(--inter-font);
+    font-size: 112.5%;
+    font-weight: 500;
+    border: solid transparent 1px;
+    margin-bottom: 10px;
+}
+
+header nav .right-ul .cart-menu .chechout-department .chechout-link:hover {
+
+    background-color: #434343;
+    color: var(--white-0);
+}
+
+header nav .right-ul .cart-menu .chechout-department .view-card-link {
+    margin-bottom: 20px;
+}
+
+header nav .right-ul .cart-menu .chechout-department .view-card-link.existing-underlined::after {
+    background-color: var(--black-1);
+}
+
+header nav .right-ul .dropdown-toggle::after {
+    display: none;
+}
+
+header nav .right-ul .dropdown-item {
+    transition: all 0.2s linear;
+}
+
+header nav .right-ul .dropdown-item:focus,
+header nav .right-ul .dropdown-item:hover {
+    background-color: var(--white-2);
+}
+
+header nav .form-check,
+header nav .form-check input,
+header nav .form-check label {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* xxl */
+@media screen and (max-width: 1399px) {}
+
+/* xl */
+@media screen and (max-width: 1199px) {}
+
+/* lg */
+@media screen and (max-width: 991px) {
+    header nav .sign-modal .sign-box-img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* md */
+@media screen and (max-width: 767px) {}
+
+/* sm */
+@media screen and (max-width: 575px) {
+    header .global-banner .content {
+        margin-inline: 10px;
+    }
+
+    header .global-banner .content>svg {
+        margin-inline-end: 10px;
+    }
+
+    header .global-banner .content .promo-text a {
+        font-size: 75%;
+        pointer-events: unset;
+    }
+
+
+    header .global-banner .content svg:first-child {
+        width: 20px;
+    }
+
+    header .global-banner button {
+        position: relative;
+    }
+
+
+    header .global-banner button .close-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav .sign-modal form {
+        width: 100%;
+    }
+}

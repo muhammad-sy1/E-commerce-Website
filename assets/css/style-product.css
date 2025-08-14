@@ -1,0 +1,332 @@
+@import url(main.css);
+@import url(header.css);
+@import url(products-slider.css);
+@import url(join-section.css);
+@import url(footer.css);
+
+main .product .nav-link.active,
+.show>.nav-link {
+    /* background-color: transparent; */
+}
+
+main .product .nav-link {
+    position: relative;
+    padding: 0;
+    height: 300px;
+}
+
+main .product .nav-link img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+main .product .nav-link .left {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    font-family: var(--inter-font);
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+main .product .nav-link .left .promo {
+    padding: 4px 14px;
+    border-radius: 4px;
+    background-color: var(--white-0);
+    color: black;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+main .product .nav-link .left .discount {
+    padding: 4px 14px;
+    line-height: 16px;
+    border-radius: 4px;
+    color: var(--white-1);
+    background-color: var(--green-color);
+}
+
+main .product .nav-link.active .left {
+    display: flex;
+}
+
+
+.product-name {
+    font-size: 100%;
+}
+
+
+
+.product-container .my-swiper-wrapper-4 {
+    width: 100%;
+    height: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-container .my-swiper-wrapper-4 .swiper-slide {
+
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.product-container .my-swiper-wrapper-4 .swiper-slide .product-img-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.product-container .my-swiper-wrapper-4 .swiper-slide .product-img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.product-container .product-info {
+    border-bottom: solid 1px var(--white-3);
+}
+
+.product-container .product-info>* {
+    margin-bottom: 16px;
+}
+
+.product-container .product-info .reviews {
+    font-family: var(--inter-font);
+    font-size: 75%;
+}
+
+.product-container .product-info .product-name {
+    font-family: var(--poppins-font);
+    font-size: 250%;
+    font-weight: 500;
+}
+
+
+.product-container .product-info .poduct-deatils {
+    font-family: var(--inter-font);
+    color: var(--black-4);
+}
+
+.product-container .product-info .product-price {
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-size: 175%;
+}
+
+.product-container .product-info .product-price :last-child {
+    color: var(--black-4);
+    text-decoration: line-through;
+}
+
+.product-container .another-deatils .measurements {
+    margin-block: 16px;
+}
+
+.product-container .another-deatils .set-color {
+    margin-bottom: 16px;
+}
+
+.product-container .another-deatils .measurements .title {
+
+    margin-bottom: 16px;
+}
+
+.product-container .another-deatils .measurements .title,
+.product-container .another-deatils .set-color .title {
+    color: var(--black-4);
+    font-weight: 600;
+    font-family: var(--inter-font);
+}
+
+.product-container .another-deatils .measurements .w-and-h {
+    font-family: var(--inter-font);
+    color: var(--black-0);
+}
+
+.product-container .another-deatils .set-color .tab-content .tab-pane {
+    font-family: var(--inter-font);
+    color: var(--black-0);
+    margin-bottom: 16px;
+}
+
+.product-container .another-deatils .set-color .nav-link {
+    border: solid 1px transparent;
+    border-radius: 0;
+}
+
+.product-container .another-deatils .set-color .nav-link.active {
+    background-color: transparent !important;
+    border: solid 1px #000;
+    border-radius: 0;
+}
+
+.product-container .another-deatils .set-color .thumb-img {
+    width: 50px;
+    height: 50px;
+}
+
+.product-container .another-deatils .set-color .thumb-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.product-container .action-buttons .increase-wishlist {
+    margin-bottom: 16px;
+}
+
+.product-container .action-buttons .increase-wishlist .increase {
+    width: 25%;
+}
+
+.product-container .action-buttons .increase-wishlist .increase .control-buttons {
+    background-color: #F5F5F5;
+    padding: 10px 30px;
+    border-radius: 8px;
+    height: 50px;
+}
+
+.product-container .action-buttons .increase-wishlist .wishlist {
+    width: 75%;
+    border-radius: 8px;
+    border: solid 1px #000;
+    padding-block: 10px;
+    font-family: var(--inter-font);
+    font-weight: 500;
+    font-size: 112.5%;
+    transition: all 0.3s linear;
+    height: 50px;
+}
+
+.product-container .action-buttons .increase-wishlist .wishlist svg path {
+    transition: all 0.3s linear;
+}
+
+.product-container .action-buttons .increase-wishlist .wishlist:hover {
+    background-color: var(--black-1);
+    color: var(--white-0);
+}
+
+.product-container .action-buttons .add-to-cart {
+    background-color: var(--black-1);
+    border: solid 1px transparent;
+    color: var(--white-0);
+    border-radius: 8px;
+    transition: all 0.2s linear;
+    font-family: var(--inter-font);
+    font-weight: 500;
+    font-size: 112.5%;
+    padding-block: 10px;
+    margin-bottom: 32px;
+}
+
+.product-container .action-buttons .add-to-cart:hover {
+    background-color: transparent;
+    border: solid 1px var(--black-1);
+    color: var(--black-1);
+    background-color: #434343;
+    color: var(--white-0);
+    /* box-shadow: var(--white-3) 5px -12px 14px 5px; */
+}
+
+.product-container .classification {
+    font-family: var(--inter-font);
+    font-size: 75%;
+    /* margin-top: 16px; */
+}
+
+.product-container .classification .stock-keeping-unite {
+    margin-bottom: 8px;
+}
+
+.product-container .classification .category {
+    margin-bottom: 16px;
+}
+
+.product-container .classification .gray-color {
+    color: var(--black-4);
+}
+
+.product-container .my-accordion * {
+    border: none !important;
+}
+
+.product-container .my-accordion .accordion-header {
+    border-bottom: solid 1px var(--black-1) !important;
+}
+
+.product-container .my-accordion .accordion-button {
+    font-size: 18px;
+    font-family: var(--inter-font);
+    font-weight: 500;
+}
+
+.product-container .my-accordion .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: var(--black-1);
+}
+
+.product-container .my-accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+.product-container .my-accordion .details-title,
+.product-container .my-accordion .packaging-title {
+    font-family: var(--inter-font);
+    font-weight: 600;
+    font-size: 87.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* xxl */
+@media screen and (max-width: 1399px) {}
+
+/* xl */
+@media screen and (max-width: 1199px) {}
+
+/* lg */
+@media screen and (max-width: 991px) {
+    .product-container .my-swiper-wrapper-4 {
+        height: 400px;
+    }
+}
+
+/* md */
+@media screen and (max-width: 767px) {}
+
+/* sm */
+@media screen and (max-width: 575px) {}

@@ -1,0 +1,98 @@
+@import url(main.css);
+@import url(header.css);
+@import url(join-section.css);
+@import url(footer.css);
+
+main .main-slide .content {
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main-slide .content .path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--inter-font);
+    font-weight: 500;
+    font-size: 87.5%;
+    margin-bottom: 10px;
+}
+
+main .main-slide .content .path :nth-child(1) {
+    color: #605F5F;
+    margin-inline-end: 5px;
+}
+
+main .main-slide .content .path svg {
+    margin-inline-end: 15px;
+}
+
+main .main-slide .content .path :nth-child(3) {
+    color: #121212;
+}
+
+main .main-slide .content .title {
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-size: 337.5%;
+    margin-bottom: 10px;
+}
+
+main .main-slide .content .sub-title {
+    font-family: var(--inter-font);
+    font-size: 125%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main .main-slide .content img {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.slide-6 .row :last-child .show-more-a {
+    padding: 10px 15px;
+    border: solid 1px var(--black-1);
+    font-family: var(--inter-font);
+    border-radius: 80px;
+}
+
+.slide-6 .row :last-child .show-more-a:hover {
+    background-color: var(--black-2);
+    color: var(--white-1);
+}
+
+
+
+
+/* xxl */
+@media screen and (max-width: 1399px) {}
+
+/* xl */
+@media screen and (max-width: 1199px) {}
+
+/* lg */
+@media screen and (max-width: 991px) {}
+
+/* md */
+@media screen and (max-width: 767px) {}
+
+/* sm */
+@media screen and (max-width: 575px) {
+    main .main-slide .content .title {
+        font-size: 275%;
+    }
+
+    main .main-slide .content .sub-title {
+        font-size: 100%;
+    }
+}

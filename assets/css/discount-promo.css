@@ -1,0 +1,122 @@
+main .slide-5 {
+    padding-block: 10px;
+}
+
+main .slide-5 .box {
+    background-color: var(--white-2);
+}
+
+main .slide-5 .img-scene {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main .slide-5 .img-scene img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+main .slide-5 .content {
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+main .slide-5 .content .discount {
+    font-family: var(--inter-font);
+    color: var(--blue-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+main .slide-5 .content .title {
+    font-family: var(--poppins-font);
+    font-size: 250%;
+    color: var(--black-1);
+    font-weight: 500;
+    line-height: 44px;
+    margin-bottom: 25px;
+}
+
+main .slide-5 .content .details {
+    font-family: var(--inter-font);
+    font-size: 125%;
+    color: var(--black-1);
+    margin-bottom: 25px;
+}
+
+main .slide-5 .more-products:hover {
+    transform: translateX(6px);
+}
+
+main .slide-5 .more-products {
+    color: var(--black-1);
+    font-family: var(--inter-font);
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    font-size: 100%;
+}
+
+main .slide-5 .more-products svg {
+    fill: var(--black-1);
+    stroke: var(--black-1);
+}
+
+main .slide-5 .more-products::after {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--black-1);
+    position: absolute;
+    bottom: -3px;
+}
+
+
+/* xxl */
+@media screen and (max-width: 1399px) {}
+
+/* xl */
+@media screen and (max-width: 1199px) {
+
+    main .slide-5 .content .title {
+        font-size: 220%;
+        line-height: 39px;
+    }
+}
+
+/* lg */
+@media screen and (max-width: 991px) {
+    main .slide-5 .content {
+        padding: 75px 32px;
+    }
+
+    main .slide-5 .content .title {
+        font-size: 210%;
+        line-height: 37px;
+    }
+}
+
+/* md */
+@media screen and (max-width: 767px) {
+    main .slide-5 .content {
+        padding: 75px 0px;
+    }
+
+    main .slide-5 .content .title {
+        font-size: 125%;
+    }
+}
+
+/* sm */
+@media screen and (max-width: 575px) {
+    main .slide-5 .content .details {
+        font-size: 100%;
+    }
+}

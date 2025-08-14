@@ -1,0 +1,148 @@
+@import url(discount-promo.css);
+
+.page-title {
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-size: 337.5%;
+    line-height: 58px;
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.page-subtitle {
+    font-family: var(--inter-font);
+    line-height: 26px;
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+main .main-slide .content .title {
+    font-size: 250%;
+}
+
+main .slide-5 .content .details {
+    font-size: 100%;
+    width: 90%;
+}
+
+main .slide-4.like .feature-card {
+    text-align: center;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+main .slide-4.like .feature-card .fiature-title {
+    font-family: var(--inter-font);
+    font-size: 100%;
+    color: var(--black-4);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main .slide-4.like .feature-card .fiature-explain {
+    font-family: var(--inter-font);
+    font-size: 100%;
+    color: var(--black-1);
+    font-weight: 600;
+    text-align: center;
+    /* width: 75%; */
+}
+
+main .slide-4 .title {
+    font-size: 275%;
+    font-family: var(--poppins-font);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+main .bg-color {
+    background-color: var(--white-2);
+}
+
+main .my-form label {
+    font-family: var(--inter-font);
+    font-size: 75%;
+    color: var(--black-4);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main .my-form input,
+main .my-form textarea {
+    border: solid 1px #cbcbcb;
+    border-radius: 6px;
+    font-family: var(--inter-font);
+    font-size: 100%;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    outline: solid 1px transparent;
+    color: var(--black-1);
+}
+
+
+/* main .my-form input:focus,
+main .my-form textarea:focus{} */
+
+main .my-form input:focus-visible,
+main .my-form textarea:focus-visible {
+    outline: solid 1px #525252;
+}
+
+
+main .my-form input:focus-visible::placeholder {
+    color: #525252;
+}
+
+main .my-form textarea {
+    min-height: 100px;
+    max-height: 170px;
+}
+
+main .my-form input[type="submit"] {
+    background-color: var(--black-1);
+    color: var(--white-1);
+    padding: 6px 40px;
+    font-family: var(--inter-font);
+    font-weight: 400;
+}
+
+main .my-form input[type="submit"]:hover {
+    background-color: #434343;
+    color: var(--white-0);
+}
+
+iframe {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .page-title {
+        font-size: 175%;
+        line-height: 34px;
+        width: 75%;
+    }
+
+    .page-subtitle {
+        width: 100%;
+    }
+
+    main .slide-4 .title {
+        font-size: 150%;
+    }
+}

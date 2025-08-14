@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side menu</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <style>
+        /* تعيين الخطوط وإعدادات الصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: 0.3s;
+        }
+
+        /* زر الهامبرغر */
+        .menu-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* خطوط زر الهامبرغر */
+        .menu-btn div {
+            width: 30px;
+            height: 4px;
+            background: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        /* القائمة الجانبية */
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #222;
+            color: white;
+            padding-top: 60px;
+            transition: 0.3s;
+            z-index: 1002;
+        }
+
+        /* زر الإغلاق */
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 25px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* روابط القائمة */
+        .side-menu a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .side-menu a:hover {
+            background: #444;
+        }
+
+        /* الطبقة الشفافة */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 1000;
+        }
+
+        /* عند فتح القائمة */
+        .open-menu {
+            left: 0 !important;
+        }
+
+        .show-overlay {
+            display: block !important;
+        }
+
+        /* تأثير زر الهامبرغر عند الفتح */
+        .menu-btn.open div:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-btn.open div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-btn.open div:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- زر الهامبرغر -->
+    <button class="menu-btn" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <div class="dropdown open">
+        <a class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown Anchor
+        </a>
+        <div class="dropdown-menu" aria-labelledby="triggerId">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item disabled" href="#">Disabled action</a>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#Id1" aria-controls="Id1">
+        Enable both scrolling & backdrop
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="Id1"
+        aria-labelledby="Enable both scrolling & backdrop">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="Enable both scrolling & backdrop">
+                Backdrop with scrolling
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>
+                Try scrolling the rest of the page to see this option in
+                action.
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- الطبقة الشفافة -->
+    <div class="overlay" onclick="toggleMenu()"></div>
+
+    <!-- القائمة الجانبية -->
+    <div class="side-menu">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <a href="#">الرئيسية</a>
+        <a href="#">من نحن</a>
+        <a href="#">الخدمات</a>
+        <a href="#">اتصل بنا</a>
+    </div>
+
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".side-menu").classList.toggle("open-menu");
+            document.querySelector(".overlay").classList.toggle("show-overlay");
+            document.querySelector(".menu-btn").classList.toggle("open");
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</body>
+
+</html>

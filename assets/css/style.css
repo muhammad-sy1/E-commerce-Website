@@ -1,0 +1,604 @@
+@import url(main.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(join-section.css);
+@import url(products-slider.css);
+@import url(discount-promo.css);
+
+
+/* ---------------------------------- */
+
+main .slide-1 .my-swiper-wrapper .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+main .slide-1 .my-swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .slide-1 .my-swiper-wrapper .swiper-slide .img-box {
+    width: 100%;
+    height: 535px;
+    position: relative;
+}
+
+main .slide-1 .my-swiper-wrapper .swiper-slide:nth-child(1) img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 95%;
+}
+
+main .slide-1 .my-swiper-wrapper .swiper-slide:nth-child(:not(1)) img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 75%;
+}
+
+.my-swiper-navigation {
+    position: absolute;
+    inset-inline: 20px;
+    top: 250px;
+}
+
+.my-swiper-pagination {
+    position: absolute;
+    top: 490px;
+    inset-inline: 0;
+}
+
+.my-swiper-navigation .swiper-button-next,
+.my-swiper-navigation .swiper-button-prev {
+    background: var(--white-0);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    padding: 10px;
+}
+
+.my-swiper-navigation .swiper-button-next:active,
+.my-swiper-navigation .swiper-button-prev:active {
+    box-shadow: inset 0px 0px 19px 0px #00000080;
+}
+
+.my-swiper-navigation .swiper-button-prev {
+    scale: -1;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: '';
+    font-family: swiper-icons;
+    font-size: 100%;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: unset;
+    line-height: unset !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    width: 30px;
+    height: 7px;
+    border-radius: 20px;
+}
+
+main .slide-title {
+    text-align: start;
+    line-height: 90px;
+    font-size: 430%;
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    padding-block: 15px;
+}
+
+main .slide-title span {
+    color: var(--black-4);
+}
+
+main .slide-description {
+    /* height: 100%; */
+    color: var(--black-4);
+    text-align: start;
+    font-family: var(--inter-font);
+    padding-block: 15px;
+}
+
+main .slide-description span {
+    font-weight: 600;
+    color: var(--black-3);
+}
+
+main .slide-2 {
+    padding-block: 20px;
+}
+
+main .slide-2 .card-item {
+    padding: 20px;
+    height: 300px;
+    background-color: #F3F5F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s linear;
+    /* margin-bottom: 20px; */
+}
+
+main .slide-2 .card-item.living-room {
+    height: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+main .slide-2 .card-item.bed-room {
+    /* margin-bottom: 24px; */
+}
+
+main .slide-2 .card-item.bed-room .img-box,
+main .slide-2 .card-item.kitchen .img-box {
+    height: 100%;
+    width: 75%;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+main .slide-2 .card-item.living-room .img-box {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+}
+
+.offcanvas.show {
+    z-index: 1050 !important;
+}
+
+.modal {
+    z-index: 1080 !important;
+}
+
+main .slide-2 .img-box img {
+    transition: all 0.3s linear;
+}
+
+main .slide-2 .card-item {
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+main .slide-2 .card-item:hover img {
+    scale: 1.03;
+}
+
+main .slide-2 .card-item .shop-now-link {
+    transition: all 0.3s linear;
+    width: 90px;
+}
+
+main .slide-2 .title {
+    font-family: var(--poppins-font);
+    font-size: 200%;
+    font-weight: 500;
+    color: var(--black-1);
+}
+
+main .slide-2 .card-item>div:first-child {
+    justify-content: end;
+}
+
+main .slide-2 .shop-now-link>a {
+    color: var(--black-1);
+    font-family: var(--inter-font);
+    text-transform: capitalize;
+    position: relative;
+    font-weight: 500;
+    font-size: 85%;
+}
+
+main .slide-2 .shop-now-link>a svg {
+    fill: var(--black-1);
+    stroke: var(--black-1);
+}
+
+main .slide-4 {
+    padding-block: 20px;
+}
+
+
+main .slide-4 .feature-card {
+    background-color: var(--white-2);
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 50px 30px;
+}
+
+main .slide-4 .feature-card svg {
+    margin-bottom: 10px;
+}
+
+main .slide-4 .feature-card .fiature-title {
+    margin-bottom: 10px;
+    font-family: var(--poppins-font);
+    font-size: 125%;
+    color: var(--black-1);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+main .slide-4 .feature-card .fiature-explain {
+    font-family: var(--poppins-font);
+    font-size: 87.5%;
+    /* margin-bottom: 10px; */
+    color: var(--black-4);
+}
+
+
+main .slide-6 {
+    padding-block: 30px 50px;
+}
+
+main .slide-6 .slide-6-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-block: 10px;
+}
+
+main .slide-6 .slide-6-nav .title {
+    font-family: var(--poppins-font);
+    width: 500;
+    font-size: 250%;
+    line-height: 44px;
+}
+
+main .slide-6 .more-products>svg {
+    fill: var(--black-1);
+    stroke: var(--black-1);
+}
+
+main .slide-6 .more-products {
+    color: var(--black-1);
+
+    position: relative;
+}
+
+main .slide-6 .more-products::after {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--black-1);
+    position: absolute;
+    bottom: -3px;
+}
+
+main .slide-6 .article-card {
+    display: block;
+    width: 100%;
+}
+
+main .slide-6 .article-card .box-img {
+    overflow: hidden;
+    width: 100%;
+    height: 280px;
+}
+
+main .slide-6 .article-card img {
+    transition: scale 0.3s linear;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+
+}
+
+main .slide-6 .article-card:hover img {
+    scale: 1.04;
+}
+
+
+main .slide-6 .article-card .more-products {
+    transition: transform 0.3s linear;
+    display: inline-flex;
+}
+
+main .slide-6 .article-card .title-article {
+    font-size: 125%;
+    font-family: var(--poppins-font);
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1700px) {
+
+    main .slide-5 .set-container,
+    main .slide-7 .set-container {
+        margin-inline: 0 !important;
+        padding-inline: 0 !important;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+/* xl */
+@media screen and (max-width: 1399px) {
+    main .slide-1 .slide-title {
+        line-height: 70px;
+        font-size: 300%;
+    }
+
+}
+
+/* xl */
+@media screen and (max-width: 1199px) {
+    main .slide-1 .slide-title {
+        line-height: 70px;
+        font-size: 300%;
+    }
+
+    main .slide-4 .feature-card .fiature-title {
+        font-size: 110%;
+    }
+
+    main .slide-4 .feature-card .fiature-explain {
+        font-size: 75%;
+    }
+
+}
+
+/* lg */
+@media screen and (max-width: 991px) {
+
+    main .slide-1 .slide-title {
+        line-height: 50px;
+        font-size: 230%;
+    }
+
+    main .slide-2 .title {
+        font-size: 150%;
+        line-height: 19px;
+    }
+
+    main .slide-2 .shop-now-link>a {
+        font-size: 80%;
+    }
+
+    main .slide-2 .card-item {
+        /* height: 250px; */
+    }
+
+    main .slide-2 .card-item.living-room {
+        /* height: 525px; */
+    }
+}
+
+/* md */
+@media screen and (max-width: 767px) {
+    main .slide-1 .slide-title {
+        line-height: 65px;
+        font-size: 300%;
+    }
+
+    main .slide-5 .set-container,
+    main .slide-7 .set-container {
+        margin-inline: 0 !important;
+        padding-inline: 0 !important;
+        max-width: 100%;
+    }
+
+}
+
+/* None */
+@media screen and (max-width: 575px) {
+
+    main .slide-1 .my-swiper-wrapper .swiper-slide .img-box {
+        height: 310px;
+    }
+
+    .my-swiper-pagination {
+        position: absolute;
+        top: 310px;
+        inset-inline: 0;
+    }
+
+    main .slide-1 .slide-title {
+        line-height: 50px;
+        font-size: 240%;
+    }
+
+    main .slide-description {
+        height: 100%;
+        font-size: 90%;
+    }
+
+    main .slide-2 .card-item.living-room {
+        height: auto;
+    }
+
+    main .slide-2 .card-item.living-room .img-box {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sm */
+@media screen and (min-width: 576px) {}
+
+/* md */
+@media screen and (min-width: 768px) {}
+
+/* lg */
+@media screen and (min-width: 992px) {}
+
+/* xl */
+@media screen and (min-width: 1200px) {}

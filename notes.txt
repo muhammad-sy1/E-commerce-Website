@@ -1,0 +1,20 @@
+the hover in nav links from https://odp.qa
+
+search in extensions of: category:formatters plaintext
+
+how to write hover in inline type
+
+how to distroy touch pad in windows10
+
+
+
+
+
+12px: 75%
+14px: 87.5%
+18px: 112.5%
+20px: 125%
+28px: 175%
+40px: 250%
+44px: 275%
+54px: 337.5%

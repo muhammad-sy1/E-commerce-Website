@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--black-1);
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    transition: all 0.2s linear;
+    color: var(--black-1);
+    position: relative;
+    font-family: var(--inter-font);
+    font-weight: 500;
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+button {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: all 0.2s linear;
+}
+
+/* label input[type="checkbox"]{
+    cursor: pointer;
+} */
+
+.form-check-input:checked {
+    background-color: #000;
+    border-color: #000;
+}
+
+.form-check-input:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.breadcrumb-item{
+    font-size: 87.5%;
+    font-family: var(--inter-font);
+    font-weight: 500;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+:root {
+    /* inter font */
+    --inter-font: "Inter", serif;
+    /* space grotesk font */
+    --space-grotesk-font: "Space Grotesk", sans-serif;
+    /* poppins font */
+    --poppins-font: "Poppins", sans-serif;
+}
+
+:root {
+
+    /* Secondary color */
+    --blue-color: #377DFF;
+    --green-color: #38CB89;
+    --orang-color: #FFAB00;
+    --red-color: #FF5630;
+
+    /* Natural, black and white */
+    --black-0: #000000;
+    --black-1: #141718;
+    --black-2: #232627;
+    --black-3: #343839;
+    --black-4: #6C7275;
+
+    --white-0: #FFFFFF;
+    --white-1: #FEFEFE;
+    --white-2: #F3F5F7;
+    --white-3: #E8ECEF;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--black-4);
+    outline: 0;
+    box-shadow: none;
+}
+
+button.btn-outline-dark:hover {
+    color: var(--white-0) !important;
+}
+
+.btn-close:focus {
+    box-shadow: unset;
+}
+
+.underlined::after {
+    transition: all 0.3s ease;
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--black-1);
+    position: absolute;
+    bottom: -3px;
+    animation-direction: reverse;
+    transform-origin: left top;
+    transform: scaleX(0);
+}
+
+.underlined:hover::after {
+    /* width: 100%; */
+    transform: scaleX(1);
+}
+
+.existing-underlined::after {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--black-1);
+    position: absolute;
+    scale: 1;
+    bottom: -3px;
+    transform-origin: left top;
+    transition: transform 0.3s ease;
+}
+
+.existing-underlined:hover::after {
+    transform: scaleX(0);
+}
+
+.right-arrow {
+    stroke: var(--black-1);
+    transition: transform 0.3s ease;
+}
+
+a:hover .right-arrow {
+    transform: translateX(5px);
+}
+
+.btn, .btn:hover, .btn:focus {
+    border: none;
+}

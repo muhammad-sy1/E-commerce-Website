@@ -1,0 +1,21 @@
+shop.php:
+    make more responsive
+    make side menu for filtering
+    improve Sort by drop down
+    product: add product to cart
+
+product.php:
+    edit first image
+    add promo element to first image product
+
+contact.php:
+
+blog.php:
+    edit blog information
+    make all blog card as links to blog-post.php
+    edit image blog
+
+blog-post.php:
+    edit post images
+    edit More Articles link to blog.php
+    edit blog information in "You might also like"

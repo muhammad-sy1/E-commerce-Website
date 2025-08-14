@@ -1,0 +1,148 @@
+main .slide-7 .container .row {
+    background-color: var(--white-2);
+}
+
+main .slide-7 .img-box {
+    overflow: hidden;
+}
+
+main .slide-7 .row div:first-child .img-box img {
+    transform-origin: 75% 20%;
+    scale: 1.4;
+    transform: translateX(-30px);
+}
+
+main .slide-7 .row div:last-child .img-box img {
+    transform-origin: 30% -35%;
+    scale: 1.3;
+    transform: translateX(75px);
+}
+
+main .slide-7 .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--black-1);
+    padding-block: 40px;
+}
+
+
+main .slide-7 .content .title {
+    text-wrap: nowrap;
+    font-size: 250%;
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    color: var(--black-1);
+
+}
+
+main .slide-7 .content .subtitle {
+    font-size: 112.5%;
+    font-family: var(--inter-font);
+    color: var(--black-1);
+    text-align: center;
+}
+
+main .slide-7 .content form {
+    font-size: 107.5%;
+    font-family: var(--inter-font);
+    font-weight: 400;
+    color: var(--black-1);
+    text-align: center;
+    border-bottom: solid 2px #AFB3B5;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    transition: border-bottom 0.3s linear;
+}
+
+main .slide-7 .content form.focus {
+    border-bottom: solid 2px var(--black-1);
+}
+
+main .slide-7 .content form input[type="email"] {
+    font-family: var(--inter-font);
+    font-weight: 500;
+    background-color: transparent !important;
+    color: var(--black-1);
+    border: none;
+    letter-spacing: -0.4px;
+    width: 80%;
+}
+
+main .slide-7 .content form input[type="email"]:focus {
+    outline: none !important;
+}
+
+main .slide-7 .content form input[type="email"]:focus+input[type="submit"] {
+    color: var(--black-1);
+}
+
+main .slide-7 .content form input[type="submit"] {
+    background-color: transparent !important;
+    font-family: var(--inter-font);
+    font-weight: 500;
+    font-size: 95%;
+    color: var(--black-4);
+    border: none;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 1700px) {
+
+    main .slide-5 .set-container,
+    main .slide-7 .set-container {
+        margin-inline: 0 !important;
+        padding-inline: 0 !important;
+        max-width: 100%;
+    }
+}
+
+/* xxl */
+@media screen and (max-width: 1399px) {}
+
+/* xl */
+@media screen and (max-width: 1199px) {}
+
+/* lg */
+@media screen and (max-width: 991px) {
+    main .slide-7 .content .title {
+        text-wrap: nowrap;
+        font-size: 250%;
+        font-family: var(--poppins-font);
+        font-weight: 500;
+        color: var(--black-1);
+    }
+
+    main .slide-7 .content form {
+        width: 60%;
+    }
+}
+
+/* md */
+@media screen and (max-width: 767px) {
+    main .slide-7 .content .title {
+        font-size: 180%;
+    }
+}
+
+/* sm */
+@media screen and (max-width: 575px) {
+    main .slide-7 .content .title {
+        font-size: 150%;
+    }
+
+    main .slide-7 .content .subtitle {
+        font-size: 95.5%;
+    }
+
+    main .slide-7 .content form {
+        font-size: 100%;
+        color: transparent;
+    }
+}
