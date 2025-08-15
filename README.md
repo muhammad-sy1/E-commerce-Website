@@ -35,7 +35,7 @@ Search for and install PHP Server extension.
 
 Open any .php page you want to view.
 
-Click "Surf Project" (from PHP Server) to launch the page in your browser.
+Click "serve Project" icon (from PHP Server) to launch the page in your browser.
 
 📌 Notes
 
