@@ -1,4 +1,4 @@
-Project Name
+E-commerce-Website
 
 This project is built using HTML, CSS, Bootstrap 5, and Pure JavaScript.
 For easier component reuse across multiple pages, PHP files were used to include and manage repeated sections like headers, footers, and other shared parts.
